@@ -2,7 +2,7 @@
 
 > ### Please read our [article](https://arxiv.org/abs/2504.04549) for further information.
 
-### Dataset download path
+### Dataset
 ORIGA dataset https://oar.a-star.edu.sg/  
 HRF dataset https://www5.cs.fau.de/research/data/fundus-images/  
 LES-AV dataset https://figshare.com/articles/dataset/LES-AV_dataset/11857698  
