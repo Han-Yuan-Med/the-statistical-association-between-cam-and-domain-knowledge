@@ -1,8 +1,13 @@
-# Exploring the association between model explanations and human knowledge 
- 
-## Dataset download
+## The statistical association between CAM and clinical domain knowledge]{Opening the black box of deep learning: Validating the statistical association between explainable artificial intelligence (XAI) and clinical domain knowledge in fundus image-based glaucoma diagnosis
+
+> ### Please read our [article](https://arxiv.org/abs/2504.04549) for further information.
+
+### Dataset download path
 ORIGA dataset https://oar.a-star.edu.sg/  
 HRF dataset https://www5.cs.fau.de/research/data/fundus-images/  
 LES-AV dataset https://figshare.com/articles/dataset/LES-AV_dataset/11857698  
 Drishti-GS dataset http://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.phplabel  
 FIVES dataset https://figshare.com/articles/figure/FIVES_A_Fundus_Image_Dataset_for_AI-based_Vessel_Segmentation/19688169  
+
+### Abstract
+While deep learning has exhibited remarkable predictive capabilities in various medical image tasks, its inherent black-box nature has hindered its widespread implementation in real-world healthcare settings. Our objective is to unveil the decision-making processes of deep learning models in the context of glaucoma classification by employing several Class Activation Map (CAM) techniques to generate model focus regions and comparing them with clinical domain knowledge of the anatomical area (optic cup, optic disk, and blood vessels). Four deep neural networks, including VGG-11, ResNet-18, DeiT-Tiny, and Swin Transformer-Tiny, were developed using binary diagnostic labels of glaucoma and five CAM methods (Grad-CAM, XGrad-CAM, Score-CAM, Eigen-CAM, and Layer-CAM) were employed to highlight the model focus area. We applied the paired-sample t-test to compare the percentage of anatomies in the model focus area to the proportion of anatomies in the entire image. After that, Pearson's and Spearman's correlation tests were implemented to examine the relationship between model predictive ability and the percentage of anatomical structures in the model focus area. On five public glaucoma datasets, all deep learning models consistently displayed statistically significantly higher percentages of anatomical structures in the focus area than the proportions of anatomical structures in the entire image. Also, we validated the positive relationship between the percentage of anatomical structures in the focus area and model predictive performance. Our study provides evidence of the convergence of decision logic between deep neural networks and human clinicians through rigorous statistical tests. We anticipate that it can help alleviate clinicians' concerns regarding the trustworthiness of deep learning in healthcare. For reproducibility, the code and dataset have been released at GitHub
